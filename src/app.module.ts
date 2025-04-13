@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { MessagingModule } from './messaging/messaging.module';
+import { OffersModule } from './offers/offers.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { MessagingModule } from './messaging/messaging.module';
       logging: true,
     }),
     MessagingModule,
+    OffersModule
   ],
   controllers: [AppController],
   providers: [AppService],

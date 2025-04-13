@@ -5,8 +5,8 @@ export class Offer {
 	@PrimaryGeneratedColumn('uuid')
 	id: string;
 
-	@Column({ name: 'user_id', type: 'varchar' })
-	userId: string;
+	@Column({ name: 'device_id', type: 'varchar' })
+	deviceId: string;
 
 	@Column({ name: 'start_station', type: 'varchar' })
 	startStation: string;
@@ -22,6 +22,9 @@ export class Offer {
 
 	@Column({ type: 'varchar' })
 	after: string;
+
+	@Column({ type: 'boolean', default: true })
+	offersByCity: boolean;
 
 	@Column({ name: 'contact_method', type: 'varchar', length: 100 })
 	contactMethod: string;

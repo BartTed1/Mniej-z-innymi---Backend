@@ -3,7 +3,7 @@ import { TokenService } from "../service/token.service";
 import { UpdateTokenRequestDto } from "../dto/request/update-token.dto";
 import { ApiOperation, ApiTags } from "@nestjs/swagger";
 
-@ApiTags("Messaging")
+@ApiTags("Messaging / Token")
 @Controller("messaging/token")
 export class TokenController {
   constructor(
